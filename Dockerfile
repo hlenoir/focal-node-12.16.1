@@ -6,7 +6,7 @@ RUN apt update && apt install -y \
   xz-utils && \
   rm -rf /var/lib/apt/lists/*
 
-# https://github.com/nodejs/docker-node/blob/master/12/buster/Dockerfile
+# https://github.com/nodejs/docker-node/commit/fdd2b251827817ac7bb4f0b2b082483abff8ea77
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
 
